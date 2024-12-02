@@ -52,7 +52,7 @@ struct MyWebView: UIViewRepresentable {
             if let userAgent = result as? String {
                 print(userAgent)
                 let customUserAgent =
-                    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36" + " APP_Wnm"
+                    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36" + " APP_Wnm payple-pay-app"
                 //  let customUserAgent = userAgent + " APP_Dewbee"
                 
                 // 실제 사용하는 webView에 설정
