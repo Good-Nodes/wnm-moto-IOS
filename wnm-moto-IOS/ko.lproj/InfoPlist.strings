@@ -1,0 +1,12 @@
+/* 
+  InfoPlist.strings
+  wnm-moto-IOS
+
+  Created by 이연주 on 12/2/24.
+  
+*/
+
+"NSCameraUsageDescription" = "아바타 수정 및 사진 업로드를 위한 카메라에 접근하도록 허용하시겠습니까?";
+"NSPhotoLibraryDescription" = "아바타 수정 및 사진 업로드를 위한 사진첩 접근권한 요청이에요!";
+"NSMicrophoneUsageDescription" = "아바타 수정 및 사진 업로드를 위한 마이크에 접근하도록 허용하시겠습니까?";
+"NSLocationUsageDescription" = "프로필 설정 및 대화 검색을 위한 사용자의 위치정보에 접근하도록 허용하시겠습니까?";
