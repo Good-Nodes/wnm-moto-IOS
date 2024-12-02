@@ -10,5 +10,7 @@
 	<string></string>
 	<key>NSLocationUsageDescription</key>
 	<string>6.0</string>
+	<key>NSUserNotificationsUsageDescription</key>
+	<string></string>
 </dict>
 </plist>
