@@ -10,3 +10,4 @@
 "NSPhotoLibraryDescription" = "Requesting access to the photo library for editing your avatar and uploading photos!";
 "NSMicrophoneUsageDescription" = "Allow access to the microphone for editing your avatar and uploading photos?";
 "NSLocationUsageDescription" = "Allow access to your location for profile settings and chat discovery?";
+"NSUserNotificationUsageDescription" = "Would you like to allow notifications for chat and board posts to be displayed as an icon badge?";

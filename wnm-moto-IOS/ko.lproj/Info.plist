@@ -8,7 +8,7 @@
 	<string></string>
 	<key>NSMicrophoneUsageDescription</key>
 	<string></string>
-	<key>NSLocationUsageDescription</key>
+	<key>NSUserNotificationsUsageDescription</key>
 	<string></string>
 </dict>
 </plist>
