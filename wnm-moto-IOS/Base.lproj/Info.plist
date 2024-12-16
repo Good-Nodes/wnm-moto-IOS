@@ -13,7 +13,7 @@
 			<string>com.goodnodes.wnm-moto-IOS</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>APP_WNM_MOTO</string>
+				<string>APP-WNM-MOTO</string>
 			</array>
 		</dict>
 		<dict/>
