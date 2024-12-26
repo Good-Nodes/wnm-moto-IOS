@@ -2,6 +2,22 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+    <key>CFBundleURLTypes</key>
+    <array>
+        <dict>
+            <key>CFBundleTypeRole</key>
+            <string>Editor</string>
+            <key>CFBundleURLIconFile</key>
+            <string>wnm-horizontal-logo-color</string>
+            <key>CFBundleURLName</key>
+            <string>com.goodnodes.wnm-moto-IOS</string>
+            <key>CFBundleURLSchemes</key>
+            <array>
+                <string>APP-WNM-MOTO</string>
+            </array>
+        </dict>
+        <dict/>
+    </array>
 	<key>NSCameraUsageDescription</key>
 	<string></string>
 	<key>NSPhotoLibraryUsageDescription</key>
@@ -14,73 +30,39 @@
 	<string></string>
     <key>LSApplicationQueriesSchemes</key>
     <array>
-        <string>itmss</string>
-        <string>itms-appss</string>
-        <string>itms</string>
-        <string>itms-apps</string>
+        <string>kftc-bankpay</string>
+        <string>ispmobile</string>
         <string>shinhan-sr-ansimclick</string>
-        <string>shinhan-sr-ansimclick-payco</string>
-        <string>shinhan-sr-ansimclick-naverpay</string>
         <string>smshinhanansimclick</string>
         <string>hdcardappcardansimclick</string>
         <string>smhyundaiansimclick</string>
         <string>mpocket.online.ansimclick</string>
         <string>scardcertiapp</string>
         <string>cloudpay</string>
-        <string>hanaskcardmobileportal</string>
         <string>nhappcardansimclick</string>
         <string>nonghyupcardansimclick</string>
         <string>kb-acp</string>
         <string>lotteappcard</string>
         <string>lottesmartpay</string>
         <string>citispay</string>
-        <string>kpay</string>
-        <string>ispmobile</string>
-        <string>paypin</string>
-        <string>payco</string>
+        <string>shinsegaeeasypayment</string>
+        <string>kakaotalk</string>
         <string>tswansimclick</string>
         <string>nhallonepayansimclick</string>
         <string>citimobileapp</string>
-        <string>citicardappkr</string>
-        <string>lpayapp</string>
-        <string>kakaotalk</string>
-        <string>shinsegaeeasypayment</string>
-        <string>kftc-bankpay</string>
-        <string>bankwallet</string>
-        <string>uppay</string>
-        <string>banka</string>
-        <string>hanamopmoasign</string>
-        <string>iphoneSbank</string>
+        <string>payco</string>
+        <string>hanaskcardmobileportal</string>
         <string>wooripay</string>
-        <string>tauthlink</string>
-        <string>lguthepay</string>
-        <string>lguthepay-xpay</string>
-        <string>smartxpay-transfer</string>
-        <string>nhappcash-acp</string>
-        <string>SmartBank2WIB</string>
-        <string>SmartBank2WB</string>
-        <string>PortalCenterWB</string>
-        <string>woorimembers</string>
-        <string>com.wooricard.wcard</string>
-        <string>NewSmartPib</string>
-        <string>wibeetalk</string>
-        <string>ansimclickscard</string>
-        <string>ansimclickipcollect</string>
-        <string>vguardstart</string>
-        <string>samsungpay</string>
-        <string>monimopay</string>
-        <string>monimopayauth</string>
+       <string>com.wooricard.wcard</string>
+        <string>lpayapp</string>
         <string>hanawalletmembers</string>
+        <string>tauthlink</string>
         <string>ktauthexternalcall</string>
-        <string>payprotocolwalletkr</string>
-        <string>newliiv</string>
-        <string>kbbank</string>
-        <string>supertoss</string>
-        <string>liivbank</string>
         <string>upluscorporation</string>
-        <string>lmslpay</string>
-        <string>naversearchthirdlogin</string>
-        <string>kb-bankpay</string>
+        <string>liivbank</string>
+       <string>kb-bankpay</string>
+       <string>naversearchthirdlogin</string>
+       <string>lmslpay</string>
     </array>
 </dict>
 </plist>
