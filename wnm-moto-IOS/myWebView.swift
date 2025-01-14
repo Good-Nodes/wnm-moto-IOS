@@ -27,8 +27,7 @@ struct MyWebView: UIViewRepresentable {
         // JavaScript에서 보내는 메시지를 수신하기 위한 핸들러 설정
         webview.configuration.userContentController.add(context.coordinator, name: "updateIntegratedNotification")
         
-        // 캐시 및 쿠키 초기화 함수 호출
-        clearWebViewCacheAndCookies()
+//        clearWebViewCacheAndCookies() // 캐시 및 쿠키 초기화 함수 호출
 
         // URL 로드
         if let url = URL(string: self.urlToLoad) {

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
-    <device id="ipad10_2" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,23 +12,22 @@
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="810" height="1080"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="wnm-horizontal-logo-color.png" translatesAutoresizingMaskIntoConstraints="NO" id="Z7X-eB-OUO">
-                                <rect key="frame" x="255" y="390" width="300" height="300"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="LaunchScreenLogo" translatesAutoresizingMaskIntoConstraints="NO" id="aDo-e5-hG0">
+                                <rect key="frame" x="130" y="367" width="130" height="110"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="Nro-lH-POT"/>
-                                    <constraint firstAttribute="width" secondItem="Z7X-eB-OUO" secondAttribute="height" multiplier="1:1" id="R4h-P1-dlA"/>
-                                    <constraint firstAttribute="height" constant="300" id="t5E-Cc-20M"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="300" id="ScW-ZQ-QLg"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="300" id="WAu-eI-BPX"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Bcu-3y-fUS"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Z7X-eB-OUO" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="0y9-OZ-oOU"/>
-                            <constraint firstItem="Z7X-eB-OUO" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="lAM-xJ-nKi"/>
+                            <constraint firstItem="aDo-e5-hG0" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="GKy-EB-CtP"/>
+                            <constraint firstItem="aDo-e5-hG0" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="gav-t4-JWD"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -38,6 +37,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="wnm-horizontal-logo-color.png" width="500" height="500"/>
+        <image name="LaunchScreenLogo" width="130" height="110"/>
     </resources>
 </document>
