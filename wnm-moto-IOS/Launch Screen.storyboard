@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
-    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <device id="retina6_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,13 +12,15 @@
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="440" height="956"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="launchscreen-logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="J5X-VT-ajD">
-                                <rect key="frame" x="131.66666666666666" y="371" width="129.99999999999997" height="110"/>
+                                <rect key="frame" x="155" y="423" width="130" height="110"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="J5X-VT-ajD" secondAttribute="height" multiplier="13:11" id="GBv-Dp-rFp"/>
+                                    <constraint firstAttribute="height" constant="110" id="dAu-XM-GcO"/>
+                                    <constraint firstAttribute="width" constant="130" id="fSI-i6-nXJ"/>
                                 </constraints>
                             </imageView>
                         </subviews>
