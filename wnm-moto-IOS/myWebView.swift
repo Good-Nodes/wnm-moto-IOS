@@ -58,7 +58,14 @@ struct MyWebView: UIViewRepresentable {
         }
 
         func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
-            if let url = navigationAction.request.url, url.scheme == "mailto" {
+            guard let url = navigationAction.request.url, let scheme = url.scheme else {
+                return decisionHandler(.cancel)
+            }
+            
+            debugPrint("url : \(url)")
+            
+            // mailto 처리
+            if scheme == "mailto" {
                 if UIApplication.shared.canOpenURL(url) {
                     UIApplication.shared.open(url) { success in
                         if success {
@@ -70,10 +77,31 @@ struct MyWebView: UIViewRepresentable {
                 } else {
                     print("이 디바이스에서는 mailto 링크를 처리할 수 없습니다.")
                 }
-                decisionHandler(.cancel)
-            } else {
-                decisionHandler(.allow)
+                return decisionHandler(.cancel)
             }
+            
+            // 3rd-party 앱 Scheme 처리
+            if scheme != "http" && scheme != "https" {
+                if scheme == "ispmobile", !UIApplication.shared.canOpenURL(url) {  // ISP 미설치 시
+                    if let ispURL = URL(string: "http://itunes.apple.com/kr/app/id369125087?mt=8") {
+                        UIApplication.shared.open(ispURL)
+                    }
+                } else if scheme == "kftc-bankpay", !UIApplication.shared.canOpenURL(url) {  // BANKPAY 미설치 시
+                    if let bankPayURL = URL(string: "http://itunes.apple.com/us/app/id398456030?mt=8") {
+                        UIApplication.shared.open(bankPayURL)
+                    }
+                } else {
+                    if UIApplication.shared.canOpenURL(url) {
+                        UIApplication.shared.open(url)
+                    } else {
+                        print("앱이 설치되지 않았거나 info.plist에 scheme이 등록되지 않았습니다.")
+                    }
+                }
+                return decisionHandler(.cancel)
+            }
+            
+            // 기본 웹 탐색 허용
+            decisionHandler(.allow)
         }
 
         // 새 창 열기 처리

@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        MyWebView(urlToLoad: "https://www.wnm.zone")
+        MyWebView(urlToLoad: "https://moto.wnm.zone")
             .ignoresSafeArea()
             .scrollIndicators(/*@START_MENU_TOKEN@*/.never/*@END_MENU_TOKEN@*/, axes: /*@START_MENU_TOKEN@*/[.vertical, .horizontal]/*@END_MENU_TOKEN@*/)
     }
