@@ -19,7 +19,7 @@ struct MyWebView: UIViewRepresentable {
         
         // webview configuration 생성 및 userAgent 설정
         let configuration = WKWebViewConfiguration()
-        configuration.applicationNameForUserAgent = "APP_Wnm payple-pay-app"
+        configuration.applicationNameForUserAgent = "APP_Wnm Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
         
         // webview instance 생성
         let webview = WKWebView(frame: .zero, configuration: configuration)
