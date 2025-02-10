@@ -19,7 +19,7 @@ struct MyWebView: UIViewRepresentable {
         
         // webview configuration 생성 및 userAgent 설정
         let configuration = WKWebViewConfiguration()
-        configuration.applicationNameForUserAgent = "APP_Wnm payple-pay-app"
+        configuration.applicationNameForUserAgent = "APP_Wnm Mozilla/5.0 (iPhone; CPU iPhone OS 16_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.0 Mobile/15E148 Safari/604.1"
         
         // webview instance 생성
         let webview = WKWebView(frame: .zero, configuration: configuration)
@@ -27,8 +27,7 @@ struct MyWebView: UIViewRepresentable {
         // JavaScript에서 보내는 메시지를 수신하기 위한 핸들러 설정
         webview.configuration.userContentController.add(context.coordinator, name: "updateIntegratedNotification")
         
-        // 캐시 및 쿠키 초기화 함수 호출
-        clearWebViewCacheAndCookies()
+//        clearWebViewCacheAndCookies() // 캐시 및 쿠키 초기화 함수 호출
 
         // URL 로드
         if let url = URL(string: self.urlToLoad) {
