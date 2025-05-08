@@ -14,10 +14,17 @@
 			<key>CFBundleURLSchemes</key>
 			<array>
 				<string>APP-WNM-MOTO</string>
+                <string>fb4011272915752293</string>
 			</array>
 		</dict>
 		<dict/>
 	</array>
+    <key>FacebookAppID</key>
+    <string>4011272915752293</string>
+    <key>FacebookClientToken</key>
+    <string>7f45c979f2e2c2fc0743f3300246160e</string>
+    <key>FacebookDisplayName</key>
+    <string>APP-WNM-MOTO</string>
     <key>LSApplicationQueriesSchemes</key>
     <array>
         <string>kftc-bankpay</string>

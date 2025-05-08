@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import FacebookCore
 
 @main
 struct wnm_moto_IOSApp: App {
@@ -14,6 +15,10 @@ struct wnm_moto_IOSApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .onAppear {
+                    // Facebook 앱 이벤트 활성화
+                    AppEvents.shared.activateApp()
+                }
         }
     }
 }
