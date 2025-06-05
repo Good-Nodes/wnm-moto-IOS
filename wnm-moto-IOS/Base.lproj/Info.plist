@@ -2,29 +2,45 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>CFBundleURLTypes</key>
-	<array>
-		<dict>
-			<key>CFBundleTypeRole</key>
-			<string>Editor</string>
-			<key>CFBundleURLIconFile</key>
-			<string>wnm-horizontal-logo-color</string>
-			<key>CFBundleURLName</key>
-			<string>com.goodnodes.wnm-moto-IOS</string>
-			<key>CFBundleURLSchemes</key>
-			<array>
-				<string>APP-WNM-MOTO</string>
+    <key>CFBundleURLTypes</key>
+    <array>
+        <dict>
+            <key>CFBundleTypeRole</key>
+            <string>Editor</string>
+            <key>CFBundleURLIconFile</key>
+            <string>wnm-horizontal-logo-color</string>
+            <key>CFBundleURLName</key>
+            <string>com.goodnodes.wnm-moto-IOS</string>
+            <key>CFBundleURLSchemes</key>
+            <array>
+                <string>APP-WNM-MOTO</string>
                 <string>fb4011272915752293</string>
-			</array>
-		</dict>
-		<dict/>
-	</array>
+            </array>
+        </dict>
+    </array>
+
     <key>FacebookAppID</key>
     <string>4011272915752293</string>
     <key>FacebookClientToken</key>
     <string>7f45c979f2e2c2fc0743f3300246160e</string>
     <key>FacebookDisplayName</key>
     <string>APP-WNM-MOTO</string>
+
+    <!-- Permissions -->
+    <key>NSCameraUsageDescription</key>
+    <string></string>
+    <key>NSPhotoLibraryUsageDescription</key>
+    <string></string>
+    <key>NSMicrophoneUsageDescription</key>
+    <string></string>
+    <key>NSLocationUsageDescription</key>
+    <string></string>
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string></string>
+    <key>NSUserNotificationsUsageDescription</key>
+    <string></string>
+
+    <!-- App Linking Targets -->
     <key>LSApplicationQueriesSchemes</key>
     <array>
         <string>kftc-bankpay</string>
@@ -50,18 +66,16 @@
         <string>payco</string>
         <string>hanaskcardmobileportal</string>
         <string>wooripay</string>
-       <string>com.wooricard.wcard</string>
+        <string>com.wooricard.wcard</string>
         <string>lpayapp</string>
         <string>hanawalletmembers</string>
         <string>tauthlink</string>
         <string>ktauthexternalcall</string>
         <string>upluscorporation</string>
         <string>liivbank</string>
-       <string>kb-bankpay</string>
-       <string>naversearchthirdlogin</string>
-       <string>lmslpay</string>
+        <string>kb-bankpay</string>
+        <string>naversearchthirdlogin</string>
+        <string>lmslpay</string>
     </array>
-	<key>NSUserNotificationsUsageDescription</key>
-	<string></string>
 </dict>
 </plist>
